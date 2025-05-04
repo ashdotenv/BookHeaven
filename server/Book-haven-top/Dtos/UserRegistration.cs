@@ -3,6 +3,10 @@
 public class UserRegistrationDto
 {
     [Required]
+    [StringLength(100)]
+    public string FullName { get; set; }
+
+    [Required]
     [StringLength(50, MinimumLength = 3)]
     public string Username { get; set; }
 
