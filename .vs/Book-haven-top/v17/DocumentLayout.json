@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\. gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\. gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\book-haven-top.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\book-haven-top.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\dtos\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\dtos\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\hp\\onedrive - london metropolitan university\\3rd years\\application development second sem coursework\\book-haven-top\\book-haven-top\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ". gitignore",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\. gitignore",
+              "RelativeDocumentMoniker": "Book-haven-top\\. gitignore",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\. gitignore",
+              "RelativeToolTip": "Book-haven-top\\. gitignore",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-04T09:47:47.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\appsettings.json",
+              "RelativeDocumentMoniker": "Book-haven-top\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\appsettings.json",
+              "RelativeToolTip": "Book-haven-top\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T09:25:06.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Program.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Program.cs",
+              "RelativeToolTip": "Book-haven-top\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:24:31.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Models\\User.cs",
+              "RelativeToolTip": "Book-haven-top\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:23:45.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Dtos\\UserRegistration.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Dtos\\UserRegistration.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Dtos\\UserRegistration.cs",
+              "RelativeToolTip": "Book-haven-top\\Dtos\\UserRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:23:00.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Dtos\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Dtos\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Dtos\\UserLoginDto.cs",
+              "RelativeToolTip": "Book-haven-top\\Dtos\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:22:22.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:21:07.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbcontext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Data\\AppDbcontext.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Data\\AppDbcontext.cs",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-haven-top\\Book-haven-top\\Data\\AppDbcontext.cs",
+              "RelativeToolTip": "Book-haven-top\\Data\\AppDbcontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:20:03.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book-haven-top.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-Haven-Top\\Book-haven-top\\Book-haven-top.csproj",
+              "RelativeDocumentMoniker": "Book-haven-top\\Book-haven-top.csproj",
+              "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\3rd years\\Application development second sem coursework\\Book-Haven-Top\\Book-haven-top\\Book-haven-top.csproj",
+              "RelativeToolTip": "Book-haven-top\\Book-haven-top.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T09:14:38.638Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

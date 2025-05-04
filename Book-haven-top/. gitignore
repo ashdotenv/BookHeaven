@@ -1,0 +1,62 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Logs
+*.log
+*.tlog
+*.vspscc
+
+# Visual Studio specific
+.vs/
+.vscode/
+
+# Rider specific
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependency directories
+node_modules/
+packages/
+
+# Configuration files
+appsettings*.json
+secrets.json
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Dotnet specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Azure Pipelines
+*.coverage
+*.coveragexml
+*.testResults
+
+# JetBrains Rider
+.idea/
+*.iml
+
+# Other
+*.bak
+*.swp
