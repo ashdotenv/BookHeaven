@@ -63,8 +63,7 @@
               "RelativeToolTip": "Book-haven-top\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:44:29.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T10:44:29.767Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Book-haven-top\\Dtos\\UserLoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:43:28.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T10:43:28.884Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "Book-haven-top\\Dtos\\UserRegistration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:42:52.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T10:42:52.524Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "Book-haven-top\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:40:36.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T10:40:36.941Z"
             },
             {
               "$type": "Document",
@@ -115,21 +111,19 @@
               "RelativeToolTip": "Book-haven-top\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:38:00.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T10:38:00.507Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Book-haven-top",
+              "Title": "Book-haven-top.csproj",
               "DocumentMoniker": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Book-haven-top.csproj",
               "RelativeDocumentMoniker": "Book-haven-top\\Book-haven-top.csproj",
               "ToolTip": "C:\\Users\\HP\\OneDrive - London Metropolitan University\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Book-haven-top.csproj",
               "RelativeToolTip": "Book-haven-top\\Book-haven-top.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-04T10:35:11.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T10:35:11.865Z"
             }
           ]
         }
