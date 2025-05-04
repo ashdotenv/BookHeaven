@@ -10,9 +10,9 @@ export const APIService = createApi({
   keepUnusedDataFor: 60 * 60 * 24 * 7,
   tagTypes: ["Books", "User"],
   endpoints: (builder) => ({
-    login: builder.mutation({
+    register: builder.mutation({
       query: (body) => ({
-        url: "/login",
+        url: "/auth/register",
         method: "POST",
         body: body,
       }),
@@ -21,4 +21,4 @@ export const APIService = createApi({
   }),
 });
 
-export const { useLoginMutation } = APIService;
+export const { useRegisterMutation } = APIService;
