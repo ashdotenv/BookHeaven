@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\middleware\\roleauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\middleware\\roleauthorizationmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAMwF4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T12:15:01.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleAuthorizationMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Middleware\\RoleAuthorizationMiddleware.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Middleware\\RoleAuthorizationMiddleware.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Middleware\\RoleAuthorizationMiddleware.cs",
+              "RelativeToolTip": "Book-haven-top\\Middleware\\RoleAuthorizationMiddleware.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:59:23.802Z",
+              "EditorCaption": ""
             }
           ]
         }

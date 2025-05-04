@@ -2,35 +2,54 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Book_haven_top.Middleware; // Adjust to your actual namespace
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Load JWT configuration from appsettings.json
+var jwtKey = builder.Configuration["Jwt:Key"];
+var jwtIssuer = builder.Configuration["Jwt:Issuer"];
 
+// Add services
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configure EF Core with PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Configure CORS to allow all localhost origins
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("LocalhostPolicy", policy =>
+    {
+        policy
+            .SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
+
+// Configure JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options => {
+    .AddJwtBearer(options =>
+    {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = false,
+            ValidateIssuer = true,
             ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("your_secret_key_here"))
+            ValidIssuer = jwtIssuer,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
         };
     });
 
-
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
+// Use development tools
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -39,8 +58,25 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Enable CORS
+app.UseCors("LocalhostPolicy");
+
+// Enable Authentication and Authorization
+app.UseAuthentication();
 app.UseAuthorization();
 
+// Role-based middleware routing
+app.UseWhen(context => context.Request.Path.StartsWithSegments("/api/admin"), appBuilder =>
+{
+    appBuilder.UseRoleAuthorization("Admin");
+});
+
+app.UseWhen(context => context.Request.Path.StartsWithSegments("/api/user"), appBuilder =>
+{
+    appBuilder.UseRoleAuthorization("User");
+});
+
+// Map controller routes
 app.MapControllers();
 
 app.Run();

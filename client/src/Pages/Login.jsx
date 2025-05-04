@@ -1,15 +1,16 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import { useLoginMutation } from '../Redux/APIService';
 
 const Login = () => {
-    const [login, { isLoading, isError, isSuccess }] = useLoginMutation()
+    const[login] = useLoginMutation()
     const handleLogin = async (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);
         const obj = Object.fromEntries(formData.entries());
-        console.log(obj);
-        const data = await login(obj)
+        const loginData = await login(obj)
+        console.log(loginData);
     }
     return (
         <div className="flex items-center justify-center min-h-screen bg-base-200">

@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useRegisterMutation } from '../Redux/APIService';
+import toast from 'react-hot-toast';
 
 const Register = () => {
+    const [register] = useRegisterMutation()
     const handleRegister = async (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);
         const obj = Object.fromEntries(formData.entries());
-
+        const loginData = await register({ ...obj })
+        console.log(loginData);
     }
     return (
         <div className="flex items-center justify-center min-h-screen bg-base-200">
