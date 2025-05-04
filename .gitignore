@@ -1,0 +1,82 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Auto-generated files
+Generated_Code/
+
+# Package management
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# VS for Mac
+.vscode/
+.idea/
+*.csproj.user
+
+# Rider
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Others
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.dbmdl
+*.bak
+*.swp
+
+# DotCover
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# VS Code settings folder
+.vscode/
+
+# User secrets
+secrets.json
+
+# Local history for JetBrains IDEs
+.localhistory/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# DotNet specific
+project.lock.json
+project.assets.json
+*.pidb
+*.svclog
+*.pdb
+*.mdb
+*.cache
+
+# WebAssembly
+wwwroot/dist/
+wwwroot/.cache/
