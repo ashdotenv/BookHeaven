@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Book-haven-top\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAMwF4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwFMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T12:15:01.889Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Book-haven-top\\Middleware\\RoleAuthorizationMiddleware.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA1wA4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:59:23.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T11:59:23.802Z"
             }
           ]
         }
