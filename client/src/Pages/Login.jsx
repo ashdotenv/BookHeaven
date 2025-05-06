@@ -2,15 +2,29 @@ import React from 'react';
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { useLoginMutation } from '../Redux/APIService';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
     const[login] = useLoginMutation()
     const handleLogin = async (e) => {
         e.preventDefault()
         const formData = new FormData(e.target);
         const obj = Object.fromEntries(formData.entries());
         const loginData = await login(obj)
-        console.log(loginData);
+        if (loginData && loginData.data && loginData.data.token) {
+            localStorage.setItem('token', loginData.data.token);
+            localStorage.setItem('user', JSON.stringify({
+                id: loginData.data.id,
+                fullName: loginData.data.fullName,
+                username: loginData.data.username,
+                email: loginData.data.email,
+                role: loginData.data.role
+            }));
+            navigate('/dashboard');
+        } else {
+            toast.error('Login failed!');
+        }
     }
     return (
         <div className="flex items-center justify-center min-h-screen bg-base-200">
@@ -19,12 +33,12 @@ const Login = () => {
                 <form onSubmit={handleLogin} className="space-y-4">
                     <div>
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text">Username</span>
                         </label>
                         <input
-                            type="email"
-                            name='email'
-                            placeholder="Enter your email"
+                            type="text"
+                            name='username'
+                            placeholder="Enter your Username    "
                             className="input input-bordered w-full"
                             required
                         />

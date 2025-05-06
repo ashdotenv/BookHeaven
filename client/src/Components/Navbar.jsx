@@ -1,14 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { logout, setUser } from "../Redux/authSlice";
 
 const Navbar = () => {
-  const [user, setUser] = useState(null);
+  const user = useSelector((state) => state.auth.user);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const localUser = localStorage.getItem("user");
-    if (localUser) setUser(JSON.parse(localUser));
-  }, []);
+    const checkAuth = () => {
+      const localUser = localStorage.getItem("user");
+      const localToken = localStorage.getItem("token");
+      if (localUser && localToken) dispatch(setUser(JSON.parse(localUser)));
+      else dispatch(setUser(null));
+    };
+    checkAuth();
+    window.addEventListener('storage', checkAuth);
+    return () => window.removeEventListener('storage', checkAuth);
+  }, [dispatch]);
 
+  const handleLogout = () => {
+    dispatch(logout());
+  };
   const dashboardItems = [
     { name: "Dashboard", link: "/dashboard" },
     { name: "My Orders", link: "/orders" },
@@ -83,7 +96,11 @@ const Navbar = () => {
             >
               {dashboardItems.map((item) => (
                 <li key={item.name}>
-                  <Link to={item.link}>{item.name}</Link>
+                  {item.name === 'Logout' ? (
+                    <Link to="/login" onClick={handleLogout}>{item.name}</Link>
+                  ) : (
+                    <Link to={item.link}>{item.name}</Link>
+                  )}
                 </li>
               ))}
             </ul>

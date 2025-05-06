@@ -6,6 +6,18 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
     public DbSet<User> Users { get; set; }
-    public DbSet<Book> Books { get; set; } // This creates a Books table
+    public DbSet<Book> Books { get; set; }
+    public DbSet<Cart> Carts { get; set; }
+    public DbSet<Order> Orders { get; set; }
+    public DbSet<Bookmark> Bookmarks { get; set; }
+    public DbSet<BannerAnnouncement> BannerAnnouncements { get; set; }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Cart>()
+            .HasOne(c => c.User)
+            .WithOne()
+            .HasForeignKey<Cart>(c => c.UserId);
+        // Removed Products relationship since Cart now uses BookIds
+    }
 }

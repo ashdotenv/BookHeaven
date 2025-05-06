@@ -14,7 +14,8 @@ using System.ComponentModel.DataAnnotations;
 public enum UserRole
 {
     Admin,
-    User
+    User,
+    Staff
 }
 
 [ApiController]
@@ -52,7 +53,7 @@ public class AuthController : ControllerBase
         // Role validation
         if (!Enum.IsDefined(typeof(UserRole), registrationDto.Role))
         {
-            return BadRequest(new { Message = "Invalid role. Valid roles are 'Admin' and 'User'." });
+            return BadRequest(new { Message = "Invalid role. Valid roles are 'Admin', 'User', and 'Staff'." });
         }
 
         // Password validation (min 6 characters, contains at least one number)
@@ -96,8 +97,10 @@ public class AuthController : ControllerBase
         return Ok(new
         {
             Token = token,
+            Id = user.Id,
             FullName = user.FullName,
             Username = user.Username,
+            Email = user.Email,
             Role = user.Role
         });
     }
@@ -124,7 +127,7 @@ public class AuthController : ControllerBase
             issuer: jwtIssuer,
             audience: jwtIssuer,
             claims: claims,
-            expires: DateTime.UtcNow.AddHours(2),
+            expires: DateTime.UtcNow.AddHours(12),
             signingCredentials: creds
         );
 
