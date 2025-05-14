@@ -50,17 +50,56 @@ public class AuthController : ControllerBase
             return BadRequest(new { Message = "Username or Email already exists" });
         }
 
-        // Role validation
-        if (!Enum.IsDefined(typeof(UserRole), registrationDto.Role))
-        {
-            return BadRequest(new { Message = "Invalid role. Valid roles are 'Admin', 'User', and 'Staff'." });
-        }
-
+        // Check if this is the first user and set as admin
+        bool isFirstUser = !await _context.Users.AnyAsync();
+        
         // Password validation (min 6 characters, contains at least one number)
         if (registrationDto.Password.Length < 6 || !registrationDto.Password.Any(char.IsDigit))
         {
             return BadRequest(new { Message = "Password must be at least 6 characters long and contain at least one number." });
         }
+
+        var user = new User
+        {
+            FullName = registrationDto.FullName,
+            Username = registrationDto.Username,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(registrationDto.Password),
+            Email = registrationDto.Email,
+            Role = isFirstUser ? UserRole.Admin.ToString() : UserRole.User.ToString()
+        };
+
+        _context.Users.Add(user);
+        await _context.SaveChangesAsync();
+
+        return Ok(new { Message = "User registered successfully" });
+    }
+
+    // POST: api/auth/add-staff
+    [HttpPost("add-staff")]
+    public async Task<IActionResult> AddStaff([FromBody] UserRegistrationDto registrationDto)
+    {
+        if (!ModelState.IsValid)
+        {
+            var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+            return BadRequest(new { Errors = errors });
+        }
+
+        // Check if username or email already exists
+        var existingUser = await _context.Users
+            .FirstOrDefaultAsync(u => u.Username == registrationDto.Username || u.Email == registrationDto.Email);
+
+        if (existingUser != null)
+        {
+            return BadRequest(new { Message = "Username or Email already exists" });
+        }
+
+        // Ensure the role is Staff
+        if (!Enum.TryParse<UserRole>(registrationDto.Role, true, out var parsedRole) || parsedRole != UserRole.Staff)
+        {
+            return BadRequest(new { Message = "Role must be 'Staff' for this operation." });
+        }
+
+
 
         var user = new User
         {
@@ -74,7 +113,7 @@ public class AuthController : ControllerBase
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
 
-        return Ok(new { Message = "User registered successfully" });
+        return Ok(new { Message = "Staff added successfully" });
     }
 
     // POST: api/auth/login
@@ -127,7 +166,7 @@ public class AuthController : ControllerBase
             issuer: jwtIssuer,
             audience: jwtIssuer,
             claims: claims,
-            expires: DateTime.UtcNow.AddHours(12),
+            expires: DateTime.UtcNow.AddYears(15),
             signingCredentials: creds
         );
 

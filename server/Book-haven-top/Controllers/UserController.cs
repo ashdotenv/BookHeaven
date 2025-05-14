@@ -158,5 +158,46 @@ namespace Book_haven_top.Controllers
 
             return Ok(items);
         }
+
+        [HttpGet("my-bookmarks")]
+        public async Task<IActionResult> GetMyBookmarks()
+        {
+            // Attempt to get user ID from claims (adjust if your auth is different)
+            var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == "userId" || c.Type.EndsWith("nameidentifier"));
+            if (userIdClaim == null)
+                return Unauthorized(new { Message = "User ID not found in token." });
+            if (!int.TryParse(userIdClaim.Value, out int userId))
+                return Unauthorized(new { Message = "Invalid user ID in token." });
+
+            var bookmark = await _context.Bookmarks
+                .Include(b => b.Books)
+                .FirstOrDefaultAsync(b => b.UserId == userId);
+
+            if (bookmark == null || bookmark.Books == null || !bookmark.Books.Any())
+                return Ok(new { Message = "No bookmarks found", Items = new List<Book>() });
+
+            var items = bookmark.Books.Select(b => new {
+                b.Id,
+                b.Title,
+                b.Author,
+                b.Description,
+                b.Price,
+                b.Stock,
+                b.Image,
+                b.Genre,
+                b.Language,
+                b.Format,
+                b.Publisher,
+                b.ISBN,
+                b.PublicationDate,
+                b.Ratings,
+                b.RatingsCount,
+                b.IsPhysicalAvailable,
+                b.SoldCount,
+                b.CreatedAt
+            });
+
+            return Ok(items);
+        }
     }
 }

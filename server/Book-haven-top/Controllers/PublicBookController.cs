@@ -16,32 +16,32 @@ namespace Book_haven_top.Controllers
             _context = context;
         }
 
-        // 1. Get all books with filtering and search
         [HttpGet]
         public async Task<IActionResult> GetAllBooks(
-            [FromQuery] string author = null,
-            [FromQuery] List<string> genre = null,
-            [FromQuery] string language = null,
-            [FromQuery] string format = null,
-            [FromQuery] string publisher = null,
-            [FromQuery] string isbn = null,
-            [FromQuery] string title = null,
-            [FromQuery] string description = null,
-            [FromQuery] decimal? minPrice = null,
-            [FromQuery] decimal? maxPrice = null,
-            [FromQuery] double? minRating = null,
-            [FromQuery] double? maxRating = null,
-            [FromQuery] bool? isPhysicalAvailable = null,
-            [FromQuery] int? minStock = null,
-            [FromQuery] int? maxStock = null,
-            [FromQuery] string sortBy = null,
-            [FromQuery] string sortOrder = "asc",
-            [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 10
-        )
+     [FromQuery] string author = null,
+     [FromQuery] List<string> genre = null,
+     [FromQuery] string language = null,
+     [FromQuery] string format = null,
+     [FromQuery] string publisher = null,
+     [FromQuery] string isbn = null,
+     [FromQuery] string title = null,
+     [FromQuery] string description = null,
+     [FromQuery] decimal? minPrice = null,
+     [FromQuery] decimal? maxPrice = null,
+     [FromQuery] double? minRating = null,
+     [FromQuery] double? maxRating = null,
+     [FromQuery] bool? isPhysicalAvailable = null,
+     [FromQuery] int? minStock = null,
+     [FromQuery] int? maxStock = null,
+     [FromQuery] string sortBy = null,
+     [FromQuery] string sortOrder = "asc",
+     [FromQuery] int page = 1,
+     [FromQuery] int pageSize = 10
+ )
         {
             var query = _context.Books.AsQueryable();
 
+            // Filters
             if (!string.IsNullOrEmpty(author))
                 query = query.Where(b => b.Author.ToLower().Contains(author.ToLower()));
             if (genre != null && genre.Any())
@@ -95,18 +95,93 @@ namespace Book_haven_top.Controllers
 
             var totalCount = await query.CountAsync();
             var books = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
-            return Ok(new { totalCount, page, pageSize, books });
+
+            // Get all orders that include any of the current books
+            var bookIds = books.Select(b => b.Id).ToList();
+
+            var ordersWithBooks = await _context.Orders
+                .Where(o => o.Items.Any(i => bookIds.Contains(i.BookId)))
+                .Select(o => new
+                {
+                    o.Id,
+                    o.Items,
+                    Reviews = _context.Reviews
+                        .Where(r => r.OrderId == o.Id)
+                        .Select(r => new
+                        {
+                            r.Id,
+                            r.UserId,
+                            r.OrderId,
+                            r.Rating,
+                            r.Comment,
+                            r.CreatedAt
+                        }).ToList()
+                })
+                .ToListAsync();
+
+            // Map reviews to books
+            var bookReviewsMap = new Dictionary<int, List<object>>();
+
+            foreach (var order in ordersWithBooks)
+            {
+                foreach (var item in order.Items)
+                {
+                    if (!bookReviewsMap.ContainsKey(item.BookId))
+                        bookReviewsMap[item.BookId] = new List<object>();
+
+                    bookReviewsMap[item.BookId].AddRange(order.Reviews);
+                }
+            }
+
+            // Final projection
+            var booksWithReviews = books.Select(book => new
+            {
+                book.Id,
+                book.Title,
+                book.Author,
+                book.Description,
+                book.Image,
+                book.Genre,
+                book.Language,
+                book.Format,
+                book.Publisher,
+                book.ISBN,
+                book.Price,
+                book.Stock,
+                book.CreatedAt,
+                book.PublicationDate,
+                book.Ratings,
+                book.RatingsCount,
+                book.IsPhysicalAvailable,
+                book.SoldCount,
+                book.DiscountPrice,
+                book.DiscountStart,
+                book.DiscountEnd,
+                book.IsOnSale,
+                Reviews = bookReviewsMap.ContainsKey(book.Id) ? bookReviewsMap[book.Id] : new List<object>()
+            });
+
+            return Ok(new
+            {
+                totalCount,
+                page,
+                pageSize,
+                books = booksWithReviews
+            });
         }
 
         // 2. Get single book by ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBookById(int id)
         {
-            var book = await _context.Books.FindAsync(id);
+            var book = await _context.Books.FirstOrDefaultAsync(b => b.Id == id);
+
             if (book == null)
                 return NotFound(new { Message = "Book not found" });
 
             return Ok(book);
         }
+
+
     }
 }

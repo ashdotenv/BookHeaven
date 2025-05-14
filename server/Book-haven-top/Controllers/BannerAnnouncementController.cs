@@ -30,6 +30,11 @@ namespace Book_haven_top.Controllers
         public async Task<IActionResult> Create([FromBody] BannerAnnouncement banner)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
+            // Ensure StartTime and EndTime are UTC
+            if (banner.StartTime.Kind != DateTimeKind.Utc)
+                banner.StartTime = DateTime.SpecifyKind(banner.StartTime, DateTimeKind.Utc);
+            if (banner.EndTime.Kind != DateTimeKind.Utc)
+                banner.EndTime = DateTime.SpecifyKind(banner.EndTime, DateTimeKind.Utc);
             _context.BannerAnnouncements.Add(banner);
             await _context.SaveChangesAsync();
             return Ok(banner);
@@ -41,8 +46,15 @@ namespace Book_haven_top.Controllers
             var existing = await _context.BannerAnnouncements.FindAsync(id);
             if (existing == null) return NotFound();
             existing.Message = banner.Message;
-            existing.StartTime = banner.StartTime;
-            existing.EndTime = banner.EndTime;
+            // Ensure StartTime and EndTime are UTC
+            if (banner.StartTime.Kind != DateTimeKind.Utc)
+                existing.StartTime = DateTime.SpecifyKind(banner.StartTime, DateTimeKind.Utc);
+            else
+                existing.StartTime = banner.StartTime;
+            if (banner.EndTime.Kind != DateTimeKind.Utc)
+                existing.EndTime = DateTime.SpecifyKind(banner.EndTime, DateTimeKind.Utc);
+            else
+                existing.EndTime = banner.EndTime;
             existing.IsActive = banner.IsActive;
             await _context.SaveChangesAsync();
             return Ok(existing);

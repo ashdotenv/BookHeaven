@@ -1,8 +1,11 @@
 ﻿using Book_haven_top.Dtos;
 using Book_haven_top.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace Book_haven_top.Controllers;
 [ApiController]
@@ -22,8 +25,44 @@ public class BookController : ControllerBase
     public async Task<IActionResult> GetAllBooks()
     {
         var books = await _context.Books.ToListAsync();
-        return Ok(books);
+        var reviews = await _context.Reviews.ToListAsync();
+        var now = DateTime.UtcNow;
+        var booksWithDiscount = books.Select(book => {
+            var hasDiscount = book.DiscountPrice.HasValue && book.DiscountStart.HasValue && book.DiscountEnd.HasValue && book.IsOnSale;
+            var isDiscountActive = hasDiscount && book.DiscountStart.Value <= now && now <= book.DiscountEnd.Value;
+            var effectivePrice = (isDiscountActive ? book.DiscountPrice.Value : book.Price);
+            return new {
+                book.Id,
+                book.Title,
+                book.Author,
+                book.Description,
+                book.Image,
+                book.Genre,
+                book.Language,
+                book.Format,
+                book.Publisher,
+                book.ISBN,
+                Price = effectivePrice,
+                book.Stock,
+                book.CreatedAt,
+                book.PublicationDate,
+                book.Ratings,
+                book.RatingsCount,
+                book.IsPhysicalAvailable,
+                book.SoldCount,
+                book.DiscountPrice,
+                book.DiscountStart,
+                book.DiscountEnd,
+                book.IsOnSale
+            };
+        }).ToList();
+        return Ok(new
+        {
+            books = booksWithDiscount,
+            reviews
+        });
     }
+
 
     // 2. Add a book
     [HttpPost]
@@ -126,5 +165,22 @@ public class BookController : ControllerBase
         await _context.SaveChangesAsync();
 
         return Ok(new { Message = "Book deleted successfully" });
+    }
+
+    [HttpPost("/api/books/upload")]
+    [Consumes("multipart/form-data")]
+    public async Task<IActionResult> UploadBookFile(IFormFile file)
+    {
+        if (file == null || file.Length == 0)
+            return BadRequest("No file uploaded.");
+
+        var filePath = Path.Combine("uploads", file.FileName);
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.CopyToAsync(stream);
+        }
+
+        return Ok(new { FilePath = filePath });
     }
 }

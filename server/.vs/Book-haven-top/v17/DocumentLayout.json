@@ -3,40 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\bannerannouncementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\bannerannouncementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\book-haven-top.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\book-haven-top.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\migrations\\20250506161001_adak.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\migrations\\20250506161001_adak.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\bookorderbroadcast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\bookorderbroadcast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\publicbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\publicbookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\dtos\\bookcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\dtos\\bookcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\migrations\\20250511124908_reviews.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\migrations\\20250511124908_reviews.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\migrations\\20250511124908_reviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\migrations\\20250511124908_reviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|c:\\users\\ashis\\onedrive\\desktop\\book-haven-top\\server\\book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B4EC707-A380-4F97-8154-D68A10DA9725}|Book-haven-top\\Book-haven-top.csproj|solutionrelative:book-haven-top\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,114 +74,172 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BannerController.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BannerController.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\BannerController.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BannerController.cs",
-              "RelativeToolTip": "Book-haven-top\\Controllers\\BannerController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T16:39:21.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Book-haven-top\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAApwEMAAAA0AAAAAAAAAA==",
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:18:44.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbcontext.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Data\\AppDbcontext.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Data\\AppDbcontext.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Data\\AppDbcontext.cs",
-              "RelativeToolTip": "Book-haven-top\\Data\\AppDbcontext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:08:54.976Z"
+              "WhenOpened": "2025-05-13T12:44:49.253Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Book-haven-top\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAswF8AAAA5AAAAAAAAAA==",
+              "Title": "20250506161001_adak.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Migrations\\20250506161001_adak.Designer.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Migrations\\20250506161001_adak.Designer.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Migrations\\20250506161001_adak.Designer.cs",
+              "RelativeToolTip": "Book-haven-top\\Migrations\\20250506161001_adak.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:07:37.79Z"
+              "WhenOpened": "2025-05-12T11:56:33.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Program.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Program.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Program.cs",
-              "RelativeToolTip": "Book-haven-top\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:52:59.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Dtos\\BookCreateDto.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Dtos\\BookCreateDto.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Dtos\\BookCreateDto.cs",
-              "RelativeToolTip": "Book-haven-top\\Dtos\\BookCreateDto.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:54:11.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Models\\Book.cs",
-              "RelativeToolTip": "Book-haven-top\\Models\\Book.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAawC0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:41:31.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BookController.cs",
-              "RelativeToolTip": "Book-haven-top\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAkwBEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T10:22:06.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Book-haven-top\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAtwIEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T12:15:01.889Z"
+              "WhenOpened": "2025-05-12T11:56:29.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookOrderBroadcast.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BookOrderBroadcast.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\BookOrderBroadcast.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BookOrderBroadcast.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\BookOrderBroadcast.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T08:07:32.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Program.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Program.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Program.cs",
+              "RelativeToolTip": "Book-haven-top\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:40:35.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BannerAnnouncementController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BannerAnnouncementController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\BannerAnnouncementController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BannerAnnouncementController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\BannerAnnouncementController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T08:10:16.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Models\\Book.cs",
+              "RelativeToolTip": "Book-haven-top\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T13:00:36.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:51:00.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Book-haven-top.csproj",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Book-haven-top.csproj",
+              "RelativeDocumentMoniker": "Book-haven-top\\Book-haven-top.csproj",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Book-haven-top.csproj",
+              "RelativeToolTip": "Book-haven-top\\Book-haven-top.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-13T10:47:34.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAewGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T15:45:20.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250511124908_reviews.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Migrations\\20250511124908_reviews.Designer.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Migrations\\20250511124908_reviews.Designer.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Migrations\\20250511124908_reviews.Designer.cs",
+              "RelativeToolTip": "Book-haven-top\\Migrations\\20250511124908_reviews.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:40:41.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250511124908_reviews.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Migrations\\20250511124908_reviews.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Migrations\\20250511124908_reviews.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Migrations\\20250511124908_reviews.cs",
+              "RelativeToolTip": "Book-haven-top\\Migrations\\20250511124908_reviews.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:40:38.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PublicBookController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\PublicBookController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\PublicBookController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\PublicBookController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\PublicBookController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAewLUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:40:44.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Book-haven-top\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Desktop\\Book-Haven-Top\\server\\Book-haven-top\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Book-haven-top\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAD4vxEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T12:59:01.179Z"
             }
           ]
         }

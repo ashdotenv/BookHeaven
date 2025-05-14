@@ -1,37 +1,33 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Book_haven_top.Middleware;
 using Microsoft.Extensions.FileProviders;
-using System.Net.WebSockets;
-using System.Collections.Concurrent;
-using System.Text.Json;
-using System.Net;
+using Book_haven_top;
+using Fleck;
+using Book_haven_top.Services;
+using Microsoft.AspNetCore.Http.Connections;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Load JWT configuration from appsettings.json
-var jwtKey = builder.Configuration["Jwt:Key"];
-var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+// Load JWT configuration
+var jwtKey = builder.Configuration["JWT:Key"];
+var jwtIssuer = builder.Configuration["JWT:Issuer"];
 
-// Add services
+// Services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new Book_haven_top.Services.SmtpEmailService(
-smtpHost: "smtp.gmail.com",
-  smtpPort: 587,
-  smtpUser: "ashishghimire445@gmail.com",
-  smtpPass: "rivc wfws qwxv wauz", // IMPORTANT: Use App Password, not your Gmail password
-  fromEmail: "ashishghimire445@gmail.com" // Replace with your from email
+    smtpHost: "smtp.gmail.com",
+    smtpPort: 587,
+    smtpUser: "ashishghimire445@gmail.com",
+    smtpPass: "rivc wfws qwxv wauz",
+    fromEmail: "ashishghimire445@gmail.com"
 ));
-
-// Configure EF Core with PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-// Configure CORS to allow all localhost origins
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("LocalhostPolicy", policy =>
@@ -43,8 +39,6 @@ builder.Services.AddCors(options =>
             .AllowCredentials();
     });
 });
-
-// Configure JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -61,64 +55,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-// WebSocket setup
-var webSocketOptions = new WebSocketOptions
-{
-    KeepAliveInterval = TimeSpan.FromMinutes(2)
-};
-app.UseWebSockets(webSocketOptions);
 
-// Store connected sockets
-var webSocketConnections = new ConcurrentBag<WebSocket>();
-
-app.Map("/ws/orders", async context =>
-{
-    if (context.WebSockets.IsWebSocketRequest)
-    {
-        var webSocket = await context.WebSockets.AcceptWebSocketAsync();
-        webSocketConnections.Add(webSocket);
-        while (webSocket.State == WebSocketState.Open)
-        {
-            var buffer = new byte[1024 * 4];
-            var result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
-            if (result.MessageType == WebSocketMessageType.Close)
-            {
-                await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closed by client", CancellationToken.None);
-            }
-        }
-    }
-    else
-    {
-        context.Response.StatusCode = 400;
-    }
-});
-
-// Helper to broadcast order messages
-app.Services.GetService<IHostApplicationLifetime>()?.ApplicationStarted.Register(() =>
-{
-    OrderWebSocketBroadcaster.Connections = webSocketConnections;
-});
-
-public static class OrderWebSocketBroadcaster
-{
-    public static ConcurrentBag<WebSocket> Connections = new ConcurrentBag<WebSocket>();
-    public static async Task BroadcastOrderAsync(object orderInfo)
-    {
-        var message = JsonSerializer.Serialize(orderInfo);
-        var buffer = Encoding.UTF8.GetBytes(message);
-        var segment = new ArraySegment<byte>(buffer);
-        foreach (var socket in Connections)
-        {
-            if (socket.State == WebSocketState.Open)
-            {
-                await socket.SendAsync(segment, WebSocketMessageType.Text, true, CancellationToken.None);
-            }
-        }
-    }
-}
-
-app.UseStaticFiles(); //this enables serving static files from wwwroot
-
+// Static files
+app.UseStaticFiles();
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(
@@ -126,48 +65,31 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/images"
 });
 
-// Use development tools
+// Swagger in development
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+// Middlewares
 app.UseHttpsRedirection();
-
-// Enable CORS
 app.UseCors("LocalhostPolicy");
-
-// Enable Authentication and Authorization
 app.UseAuthentication();
 app.UseAuthorization();
-// Role-based middleware routing
+
 app.UseWhen(context => context.Request.Path.StartsWithSegments("/api/admin"), appBuilder =>
 {
     appBuilder.UseVerifyToken();
     appBuilder.UseRoleAuthorization("Admin");
 });
-
 app.UseWhen(context => context.Request.Path.StartsWithSegments("/api/user"), appBuilder =>
 {
     appBuilder.UseVerifyToken();
     appBuilder.UseRoleAuthorization("User");
 });
 
-// Map controller routes
 app.MapControllers();
 
-// Start WebSocket server on a different port (e.g., 8081)
-Task.Run(async () =>
-{
-    var wsHost = new WebHostBuilder()
-        .UseKestrel(options =>
-        {
-            options.Listen(IPAddress.Loopback, 8081);
-        })
-        .UseStartup<WebSocketStartup>()
-        .Build();
-    await wsHost.RunAsync();
-});
-
 app.Run();
+

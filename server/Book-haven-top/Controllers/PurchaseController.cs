@@ -19,10 +19,9 @@ namespace Book_haven_top.Controllers
             _context = context;
         }
 
-        [HttpPut]
-        public async Task<IActionResult> CompletePurchase([FromBody] ProcessPurchaseDto dto)
+        [HttpPut("verify-purchase")]
+        public async Task<IActionResult> VerifyPurchase([FromBody] ProcessPurchaseDto dto)
         {
-            // Extract userId from token
             var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (string.IsNullOrEmpty(userIdClaim))
                 return BadRequest("User ID not found in token");
@@ -31,7 +30,6 @@ namespace Book_haven_top.Controllers
                 return BadRequest("Invalid user ID in token");
             if (userId != dto.UserId)
                 return Forbid();
-            // Find order by userId and claim code
             var order = await _context.Orders.FirstOrDefaultAsync(o => o.UserId == dto.UserId && o.ClaimCode == dto.ClaimCode && o.Status == "Pending");
             if (order == null) return NotFound("Order not found or already processed.");
             order.Status = "Completed";
